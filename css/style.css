@@ -273,7 +273,6 @@ section li {
     align-items: center;
     gap: 20px;
     text-align: left;
-    max-width: 300px;
 }
 
 .contato-icon-circle {
@@ -331,6 +330,37 @@ section li {
     object-fit: cover;
     margin-bottom: 15px;
     border: 4px solid #ffc107; /* Borda amarela de destaque */
+}
+
+/* Estilo para o contêiner do ícone e texto */
+.contato-info {
+    display: flex;
+    align-items: center; /* Alinha verticalmente o ícone e o texto */
+    gap: 15px; /* Adiciona um espaço entre o texto e o ícone */
+}
+
+/* Estilo para o link social */
+.social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 24px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+/* Estilo específico para o Instagram */
+.social-link.instagram {
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Efeito de hover */
+.social-link.instagram:hover {
+    transform: scale(1.1);
 }
 
 /* Estilo para o Rodapé */
@@ -407,8 +437,16 @@ footer {
         gap: 30px;
     }
     .contato-item {
-        flex-direction: column; /* Organiza o ícone e o texto de cada item em coluna */
+        /* Alinha os itens em coluna para mobile, mas centraliza o conteúdo */
+        flex-direction: column;
         align-items: center;
         text-align: center;
     }
+
+    .contato-info {
+        /* Garante que o título e o link fiquem lado a lado mesmo no mobile */
+        flex-direction: column;
+        justify-content: center;
+    }
+
 }
