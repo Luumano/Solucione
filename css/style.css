@@ -132,7 +132,7 @@ header p {
 
 /* Estilo para as seções */
 section h3 {
-    font-size: 2.5em;
+    font-size: 2em;
     margin-bottom: 30px;
     color: #007bff; /* Título das seções em azul */
 }
@@ -144,6 +144,7 @@ section ul {
 
 section li {
     margin-bottom: 10px;
+    font-size: 16px;
 }
 
 /* Cores de fundo alternadas para as seções */
@@ -191,38 +192,64 @@ section li {
     margin: 20px auto;
 }
 
-/* Estilos para a seção de Carrossel */
-#carousel-section {
-    background-color: #f4f4f4;
+/* Estilo para a nova seção de Funcionalidades */
+#funcionalidades {
+    background-color: #fff;
     padding: 80px 50px;
 }
 
-.carousel-container {
-    max-width: 900px;
-    margin: 0 auto;
-    position: relative;
-    overflow: hidden;
+.section-description {
+    max-width: 800px;
+    margin: 0 auto 50px;
+    font-size: 1.1em;
+    color: #555;
+}
+
+.funcionalidades-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.funcionalidade-item {
+    background-color: #f8f9fa;
+    padding: 30px;
     border-radius: 10px;
-    /* box-shadow: 0 4px 15px rgba(0,0,0,0.2); */
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.carousel-image {
-    width: 100%;
-    height: auto;
-    display: none; /* Esconde todas as imagens por padrão */
-    transition: opacity 1s ease-in-out;
+.funcionalidade-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
 }
 
-.carousel-image.active {
-    display: block; /* Mostra a imagem ativa */
+.funcionalidade-item i {
+    font-size: 3em;
+    color: #007bff;
+    margin-bottom: 15px;
 }
+
+.funcionalidade-item h4 {
+    font-size: 1.5em;
+    margin: 0;
+    color: #333;
+}
+
+.funcionalidade-item p {
+    font-size: 1em;
+    margin: 10px 0 0;
+    color: #666;
+}
+
 
 #modelo-negocio {
     background-color: #e9ecef;
 }
 
 #equipe {
-    background-color: #fff;
+    background-color: #e9ecef;
 }
 
 #contato {
@@ -277,7 +304,6 @@ section li {
     margin-top: 50px;
 }
 
-
 /* Estilo para a seção de Equipe (com fotos) */
 .equipe-membros {
     display: grid;
@@ -315,84 +341,74 @@ footer {
     padding: 25px 0;
 }
 
+
 /* Design Responsivo - Ajustes para telas de até 768px */
 @media (max-width: 768px) {
-    header {
-        padding: 40px 20px; /* Reduz o padding para a imagem de fundo caber melhor */
-    }
-
-     .main-nav {
+    /* Ajustes para o menu hambúrguer */
+    .main-nav {
         flex-direction: row;
         justify-content: space-between;
     }
-    
     .hamburger-menu {
-        display: block; /* Mostra o ícone em telas pequenas */
+        display: block;
     }
-
     .main-nav .nav-links {
         display: flex;
         flex-direction: column;
         background-color: #007bff;
         position: absolute;
         top: 0;
-        left: -100%; /* Esconde o menu fora da tela */
+        left: -100%;
         width: 100%;
         height: 100vh;
         padding-top: 80px;
         transition: left 0.3s ease-in-out;
         z-index: 999;
     }
-
     .main-nav .nav-links.active {
-        left: 0; /* Exibe o menu quando a classe 'active' é adicionada */
+        left: 0;
     }
 
-    .main-nav li {
-        text-align: center;
+    /* Ajustes para o cabeçalho */
+    header {
+        padding: 50px 20px;
     }
-
     header h1 {
-        font-size: 2.2em; /* Reduz o tamanho da fonte para h1 */
+        font-size: 2.2em;
     }
-
-    .btn-cta {
-        padding: 10px 9px;
-        font-size: 1em;
-    }
-
     header h2 {
-        font-size: 1.2em; /* Reduz o tamanho da fonte para h2 */
+        font-size: 1.2em;
     }
-
+    
+    /* Ajustes para as seções em geral */
     section {
-        padding: 50px 20px; /* Reduz o padding das seções */
+        padding: 50px 20px;
     }
-
     section h3 {
-        font-size: 1.8em; /* Reduz o tamanho da fonte para os títulos das seções */
+        font-size: 1.8em;
     }
 
     /* Ajuste para a seção de objetivo */
     .objetivo-content {
-        flex-direction: column; /* Garante que a imagem e o texto fiquem em colunas */
+        flex-direction: column;
     }
-    
     .objetivo-text {
         max-width: 100%;
         text-align: center;
     }
-
-    /* Ajuste para a seção de equipe em dispositivos móveis */
+    
+    /* Ajuste para a seção de equipe */
     .equipe-membros {
-        grid-template-columns: 1fr; /* Cada membro em uma linha separada */
-    }
-        .contato-container {
-        flex-direction: column;
-        gap: 20px;
+        grid-template-columns: 1fr;
     }
 
+    .contato-container {
+        flex-direction: column; /* Organiza os itens de contato em coluna */
+        gap: 30px;
+    }
     .contato-item {
-        justify-content: center;
+        flex-direction: column; /* Organiza o ícone e o texto de cada item em coluna */
+        align-items: center;
+        text-align: center;
     }
 }
