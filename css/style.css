@@ -1,0 +1,398 @@
+/* Importação de fonte do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+/* Estilos gerais para o corpo da página */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; /* Cor de fundo suave */
+    color: #333; /* Cor do texto padrão */
+    line-height: 1.6;
+}
+
+.main-nav {
+    background-color: #007bff;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    padding: 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+}
+
+.main-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-nav li a {
+    display: block;
+    padding: 15px 20px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.main-nav li a:hover {
+    background-color: #0056b3;
+}
+
+/* Estilo do ícone Hambúrguer */
+.hamburger-menu {
+    display: none; /* Esconde o ícone por padrão em telas grandes */
+    width: 30px;
+    height: 25px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    z-index: 1100;
+}
+
+.hamburger-menu span {
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: #fff;
+    margin-bottom: 5px;
+    transition: transform 0.3s ease-in-out;
+}
+
+
+/* Estilo para todas as seções */
+section {
+    padding: 80px 50px; /* Aumentado o padding lateral */
+    text-align: center;
+}
+
+/* Estilo para o cabeçalho */
+header {
+    background-image: url('../images/fundo_logo.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #fff;
+    padding: 200px 50px;
+    text-align: center;
+}
+
+/* Estilo para a imagem do cabeçalho (logo) */
+.logo-header {
+    max-width: 200px;
+    width: 80%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 3.5em;
+    margin: 0;
+    font-weight: 600;
+}
+
+header h2 {
+    font-size: 1.8em;
+    margin-top: 15px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header p {
+    font-size: 1.2em;
+    margin: 30px auto;
+    max-width: 700px;
+}
+
+/* Botão de Chamada para Ação (CTA) */
+.btn-cta {
+    display: inline-block;
+    background-color: #ffc107; /* Cor de destaque - amarelo */
+    color: #333;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: 600;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-cta:hover {
+    background-color: #e0a800; /* Escurece a cor no hover */
+}
+
+/* Estilo para as seções */
+section h3 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    color: #007bff; /* Título das seções em azul */
+}
+
+section ul {
+    list-style: none;
+    padding: 0;
+}
+
+section li {
+    margin-bottom: 10px;
+}
+
+/* Cores de fundo alternadas para as seções */
+#problema {
+    background-color: #e9ecef;
+}
+
+/* Estilos para a seção de Objetivo */
+#objetivo {
+    background-color: #ffffff; /* Branco */
+}
+
+.objetivo-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+.objetivo-text {
+    text-align: center;
+    max-width: 50%;
+}
+
+.objetivo-text h3 {
+    text-align: center;
+}
+
+.objetivo-image img {
+    max-width: 70%;
+    height: auto;
+    border-radius: 10px;
+    /* box-shadow: 0 4px 10px rgba(0,0,0,0.1); */
+}
+
+#publico-alvo {
+    background-color: #e9ecef;
+}
+
+.alvo-image {
+    max-width: 700px; /* Tamanho máximo para a imagem */
+    width: 90%; /* Garante que a imagem se ajuste a telas menores */
+    height: auto;
+    margin: 20px auto;
+}
+
+/* Estilos para a seção de Carrossel */
+#carousel-section {
+    background-color: #f4f4f4;
+    padding: 80px 50px;
+}
+
+.carousel-container {
+    max-width: 900px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    /* box-shadow: 0 4px 15px rgba(0,0,0,0.2); */
+}
+
+.carousel-image {
+    width: 100%;
+    height: auto;
+    display: none; /* Esconde todas as imagens por padrão */
+    transition: opacity 1s ease-in-out;
+}
+
+.carousel-image.active {
+    display: block; /* Mostra a imagem ativa */
+}
+
+#modelo-negocio {
+    background-color: #e9ecef;
+}
+
+#equipe {
+    background-color: #fff;
+}
+
+#contato {
+    background-color: #e9ecef;
+}
+
+#contato h3 {
+    margin-bottom: 50px;
+}
+
+.contato-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+.contato-item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    text-align: left;
+    max-width: 300px;
+}
+
+.contato-icon-circle {
+    background-color: #007bff;
+    color: #fff;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+}
+
+.contato-info h4 {
+    margin: 0;
+    font-size: 1.2em;
+    color: #333;
+}
+
+.contato-info p {
+    margin: 0;
+    font-size: 1em;
+    color: #555;
+}
+
+.contato-mapa {
+    margin-top: 50px;
+}
+
+
+/* Estilo para a seção de Equipe (com fotos) */
+.equipe-membros {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+}
+
+#equipe li {
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#equipe li:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+#equipe img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; /* Torna a imagem circular */
+    object-fit: cover;
+    margin-bottom: 15px;
+    border: 4px solid #ffc107; /* Borda amarela de destaque */
+}
+
+/* Estilo para o Rodapé */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 25px 0;
+}
+
+/* Design Responsivo - Ajustes para telas de até 768px */
+@media (max-width: 768px) {
+    header {
+        padding: 40px 20px; /* Reduz o padding para a imagem de fundo caber melhor */
+    }
+
+     .main-nav {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    .hamburger-menu {
+        display: block; /* Mostra o ícone em telas pequenas */
+    }
+
+    .main-nav .nav-links {
+        display: flex;
+        flex-direction: column;
+        background-color: #007bff;
+        position: absolute;
+        top: 0;
+        left: -100%; /* Esconde o menu fora da tela */
+        width: 100%;
+        height: 100vh;
+        padding-top: 80px;
+        transition: left 0.3s ease-in-out;
+        z-index: 999;
+    }
+
+    .main-nav .nav-links.active {
+        left: 0; /* Exibe o menu quando a classe 'active' é adicionada */
+    }
+
+    .main-nav li {
+        text-align: center;
+    }
+
+    header h1 {
+        font-size: 2.2em; /* Reduz o tamanho da fonte para h1 */
+    }
+
+    .btn-cta {
+        padding: 10px 9px;
+        font-size: 1em;
+    }
+
+    header h2 {
+        font-size: 1.2em; /* Reduz o tamanho da fonte para h2 */
+    }
+
+    section {
+        padding: 50px 20px; /* Reduz o padding das seções */
+    }
+
+    section h3 {
+        font-size: 1.8em; /* Reduz o tamanho da fonte para os títulos das seções */
+    }
+
+    /* Ajuste para a seção de objetivo */
+    .objetivo-content {
+        flex-direction: column; /* Garante que a imagem e o texto fiquem em colunas */
+    }
+    
+    .objetivo-text {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    /* Ajuste para a seção de equipe em dispositivos móveis */
+    .equipe-membros {
+        grid-template-columns: 1fr; /* Cada membro em uma linha separada */
+    }
+        .contato-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .contato-item {
+        justify-content: center;
+    }
+}
