@@ -271,7 +271,7 @@ section li {
 .contato-item {
     display: flex;
     align-items: center;
-    gap: 15px;
+    gap: 20px;
     text-align: left;
 }
 
@@ -432,10 +432,6 @@ footer {
         grid-template-columns: 1fr;
     }
 
-    .contato-container {
-        flex-direction: column; /* Organiza os itens de contato em coluna */
-        gap: 30px;
-    }
     .contato-item {
         /* Alinha os itens em coluna para mobile, mas centraliza o conteúdo */
         flex-direction: column;
