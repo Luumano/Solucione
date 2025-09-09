@@ -44,6 +44,7 @@ body {
 
 .main-nav li a:hover {
     background-color: #0056b3;
+    border-radius: 10px;
 }
 
 /* Estilo do ícone Hambúrguer */
@@ -127,7 +128,7 @@ header p {
 }
 
 .btn-cta:hover {
-    background-color: #e0a800; /* Escurece a cor no hover */
+    background-color: #493701; /* Escurece a cor no hover */
 }
 
 /* Estilo para as seções */
@@ -371,6 +372,15 @@ footer {
     padding: 25px 0;
 }
 
+a{
+    color: #a0a1b5;
+    text-decoration: none;
+}
+
+a:hover{
+    color: #e0a800;
+    text-decoration: none;
+}
 
 /* Design Responsivo - Ajustes para telas de até 768px */
 @media (max-width: 768px) {
