@@ -50,7 +50,7 @@ body {
 /* Estilo do ícone Hambúrguer */
 .hamburger-menu {
     display: none; /* Esconde o ícone por padrão em telas grandes */
-    width: 30px;
+    width: 40px;
     height: 25px;
     background: transparent;
     border: none;
@@ -123,7 +123,7 @@ header p {
     text-decoration: none;
     border-radius: 50px;
     font-weight: 600;
-    margin-top: 20px;
+    margin-top: 40px;
     transition: background-color 0.3s ease;
 }
 
@@ -399,7 +399,7 @@ a:hover{
         position: absolute;
         top: 0;
         left: -100%;
-        width: 100%;
+        width: 80%;
         height: 100vh;
         padding-top: 80px;
         transition: left 0.3s ease-in-out;
@@ -411,8 +411,16 @@ a:hover{
 
     /* Ajustes para o cabeçalho */
     header {
+        width: 374px;
         padding: 50px 20px;
     }
+
+    .btn-cta {
+        margin-bottom: 8px;
+        padding: 8px 12px;
+        font-size: 12px;
+    }
+
     header h1 {
         font-size: 2.2em;
     }
@@ -425,7 +433,7 @@ a:hover{
         padding: 50px 20px;
     }
     section h3 {
-        font-size: 1.8em;
+        font-size: 1.5em;
     }
 
     /* Ajuste para a seção de objetivo */
@@ -455,4 +463,19 @@ a:hover{
         justify-content: center;
     }
 
+    a{
+    color: #a0a1b5;
+    text-decoration: none;
+    }
+
+    a:hover{
+    color: #e0a800;
+    text-decoration: none;
+    }
+    
+    p{
+        font-size: 14px;
+    }
+
 }
+
