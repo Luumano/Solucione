@@ -775,11 +775,24 @@ section li {
         text-align: left;
     }
 
-        .objetivo-container {
+    #publico-alvo h3 {
+        font-size: 2em;
+    }
+    .alvo-card {
+        width: 100%; /* Cartões ocupam a largura total em telas pequenas */
+        max-width: 320px; /* Limita a largura máxima em telas muito estreitas */
+    }
+    .publico-alvo-cards {
+        flex-direction: column; /* Empilha os cartões verticalmente */
+        align-items: center;
+    }
+
+    .objetivo-container {
         flex-direction: row;
         justify-content: center;
         text-align: left;
     }
+
     .objetivo-info {
         flex-basis: 50%;
         text-align: left;
@@ -1050,5 +1063,17 @@ section li {
 
     .footer-section h4 {
         margin-bottom: 10px;
+    }
+
+    #publico-alvo h3 {
+        font-size: 2em;
+    }
+    .alvo-card {
+        width: 100%; /* Cartões ocupam a largura total em telas pequenas */
+        max-width: 320px; /* Limita a largura máxima em telas muito estreitas */
+    }
+    .publico-alvo-cards {
+        flex-direction: column; /* Empilha os cartões verticalmente */
+        align-items: center;
     }
 }
