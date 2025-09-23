@@ -61,49 +61,73 @@
 
     <section id="objetivo">
         <h3>Nosso Objetivo</h3>
-        <div class="objetivo-content">
-            <div class="objetivo-text">
+        <div class="objetivo-container">
+            <div class="objetivo-info">
                 <ul>
                     <li>Agilidade, conexão e praticidade.</li>
                     <li>Conectar lojas e profissionais a potenciais clientes e vice-versa.</li>
                     <li>Facilitar a relação comercial.</li>
                 </ul>
             </div>
-            <div class="objetivo-image">
-                <img src="images/objetivo.png" alt="Imagem que representa o objetivo da Solucione">
+            <div class="objetivo-visuals">
+                <div class="objetivo-item">
+                    <img src="images/loja_engenheiro.png" alt="Mascotes representando lojas e profissionais" class="objetivo-imagem">
+                    <h4>Lojas e Profissionais</h4>
+                </div>
+                <div class="objetivo-item">
+                    <img src="images/possiveis_clientes.png" alt="Mascote representando clientes" class="objetivo-imagem">
+                    <h4>Potenciais Clientes</h4>
+                </div>
             </div>
         </div>
     </section>
 
     <section id="publico-alvo">
         <h3>Nosso Público-Alvo</h3>
-        <p>A plataforma é para <strong>Clientes</strong>, <strong>Profissionais</strong> e <strong>Lojas</strong> que querem <strong>COMPRAR</strong> e aqueles que querem <strong>VENDER</strong>.</p>
-        <img src="images/pubalvo.png" alt="Imagem que representa o público-alvo da Solucione" class="alvo-image">
+        <p class="section-description">A plataforma é para <strong>Clientes</strong>, <strong>Profissionais</strong> e <strong>Lojas</strong> que querem <strong>COMPRAR</strong> e aqueles que querem <strong>VENDER</strong>.</p>
+        
+        <div class="publico-alvo-cards">
+            <div class="alvo-card">
+                <img src="images/cliente.png" alt="Mascote representando clientes" class="alvo-imagem">
+                <h4>Clientes</h4>
+            </div>
+            <div class="alvo-card">
+                <img src="images/engenheiro.png" alt="Mascote representando profissionais/engenheiros" class="alvo-imagem">
+                <h4>Profissionais</h4>
+            </div>
+            <div class="alvo-card">
+                <img src="images/loja.png" alt="Imagem representando lojas" class="alvo-imagem">
+                <h4>Lojas</h4>
+            </div>
+        </div>
     </section>
 
-<section id="funcionalidades">
-    <h3>Serviços</h3>
-    <p class="section-description">O Solucione é um aplicativo que facilita a conexão entre clientes, engenheiros e lojas de construções, simplificando a divulgação de serviços e a compra de materiais.</p>
-    
-    <div class="funcionalidades-container">
-        <div class="funcionalidade-item">
-            <i class="fas fa-user-plus"></i> <h4>Cadastro</h4>
-            <p>Registre-se como cliente, profissional ou lojista para começar a usar a plataforma.</p>
+    <section id="servicos">
+        <h3>Serviços</h3>
+        <div class="servicos-container">
+            <div class="servico-item">
+                <img src="images/cadastro.png" alt="Mascote de cadastro de cliente" class="servico-mascote">
+                <div class="servico-texto">
+                    <h4>Cadastro</h4>
+                    <p>Registre-se como cliente, profissional ou lojista para começar a usar a plataforma.</p>
+                </div>
+            </div>
+            <div class="servico-item">
+                <img src="images/catalogo.png" alt="Mascote de catálogo" class="servico-mascote">
+                <div class="servico-texto">
+                    <h4>Catálogo</h4>
+                    <p>Navegue por um catálogo completo de produtos e serviços oferecidos pelas lojas parceiras.</p>
+                </div>
+            </div>
+            <div class="servico-item">
+                <img src="images/compras.png" alt="Mascote de compras" class="servico-mascote">
+                <div class="servico-texto">
+                    <h4>Compras</h4>
+                    <p>Adquira materiais e contrate serviços de forma prática e segura, tudo em um só lugar.</p>
+                </div>
+            </div>
         </div>
-        <div class="funcionalidade-item">
-            <i class="fas fa-book"></i> <h4>Catálogo</h4>
-            <p>Navegue por um catálogo completo de produtos e serviços oferecidos pelas lojas parceiras.</p>
-        </div>
-        <div class="funcionalidade-item">
-            <i class="fas fa-shopping-cart"></i> <h4>Compras</h4>
-            <p>Adquira materiais e contrate serviços de forma prática e segura, tudo em um só lugar.</p>
-        </div>
-        <div class="funcionalidade-item">
-            <i class="fas fa-credit-card"></i> <h4>Pagamento</h4>
-            <p>Escolha a melhor forma de pagamento e finalize suas transações de forma rápida e segura.</p>
-        </div>
-    </div>
-</section>
+    </section>
 
 <section id="equipe">
     <h3>Nosso Time</h3>
@@ -120,12 +144,12 @@
             <p><strong>CTO, Tech Lead do Projeto</strong></p>
             <p>Responsável por liderar a área de tecnologia dentro da empresa, supervisionar o desenvolvimento de produtos tecnológicos, definir as estratégias para inovação e garantir que a infraestrutura tecnológica esteja alinhada aos objetivos de negócio</p>
         </li>
-        <li>
+        <!--<li>
             <img src="images/enryco.png" alt="Foto de Enryco">
             <h4>Enryco</h4>
             <p><strong>Desenvolvedor front-end</strong></p>
             <p>Responsável por implementar a interface do usuário e garantir uma experiência de usuário agradável e intuitiva.</p>
-        </li>
+        </li>-->
         <li>
             <img src="images/paulo.png" alt="Foto de Paulo Henrique">
             <h4>Paulo Henrique</h4>
@@ -171,12 +195,12 @@
             <div class="footer-section social-media">
                 <h4>Siga-nos</h4>
                 <div class="social-links">
-                    <a href="https://twitter.com/yourprofile" target="_blank" aria-label="Twitter">
+                    <!--<a href="https://twitter.com/yourprofile" target="_blank" aria-label="Twitter">
                         <i class="fab fa-twitter"></i>
                     </a>
                     <a href="https://facebook.com/yourprofile" target="_blank" aria-label="Facebook">
                         <i class="fab fa-facebook-f"></i>
-                    </a>
+                    </a>-->
                     <a href="https://www.instagram.com/solucioneoficial?utm_source=ig_web_button_share_sheet&igsh=cGF1eTluMm9vYXZh" target="_blank" aria-label="Instagram">
                         <i class="fab fa-instagram"></i>
                     </a>
