@@ -326,7 +326,7 @@ section li {
 }
 
 .objetivo-imagem {
-    width: 100px; /* Tamanho ajustável para os mascotes */
+    width: 200px; /* Tamanho ajustável para os mascotes */
     height: auto;
     margin-bottom: 1px;
 }
@@ -964,6 +964,12 @@ section li {
         font-size: 1em;
     }
 
+    .objetivo-imagem {
+    width: 150px;
+    height: auto;
+    margin-bottom: 10px;
+    }
+
     /* Seções */
     section {
         padding: 50px 20px;
@@ -1047,6 +1053,12 @@ section li {
 
     .funcionalidade-item h4 {
         font-size: 1.2em;
+    }
+
+    .objetivo-imagem {
+    width: 150px;
+    height: auto;
+    margin-bottom: 10px;
     }
 
     #contato {
