@@ -326,9 +326,9 @@ section li {
 }
 
 .objetivo-imagem {
-    width: 200px; /* Tamanho ajustável para os mascotes */
+    width: 100px; /* Tamanho ajustável para os mascotes */
     height: auto;
-    margin-bottom: 15px;
+    margin-bottom: 1px;
 }
 
 .objetivo-item h4 {
@@ -1070,7 +1070,7 @@ section li {
     }
     .alvo-card {
         width: 100%; /* Cartões ocupam a largura total em telas pequenas */
-        max-width: 320px; /* Limita a largura máxima em telas muito estreitas */
+        max-width: 200px; /* Limita a largura máxima em telas muito estreitas */
     }
     .publico-alvo-cards {
         flex-direction: column; /* Empilha os cartões verticalmente */
