@@ -77,21 +77,63 @@ section {
 }
 
 /* Estilo para o cabeçalho */
-/* Container que alinha o texto e a imagem lado a lado */
-.header-content {
+/* Estilos para o Cabeçalho (Header) */
+#inicio {
+    background-color: #f8f9fa; /* Fundo suave */
+    /* min-height: 80vh; /* Altura mínima para ocupar a maior parte da tela */
     display: flex;
-    align-items: center; /* Alinha os itens verticalmente no centro */
-    justify-content: center; /* Centraliza os itens horizontalmente */
-    gap: 50px; /* Adiciona um espaço entre o texto e a imagem */
-    flex-wrap: wrap; /* Permite que os itens quebrem a linha em telas menores */
-    text-align: left; /* Alinha o texto à esquerda dentro do seu contêiner */
+    align-items: center; /* Centraliza o conteúdo verticalmente */
+    justify-content: center;
+    /* padding: 20px; */
 }
 
-/* Estilo para a imagem do mascote no cabeçalho */
-.mascote-header {
-    max-width: 600px; /* Define um tamanho máximo para a imagem */
-    height: auto;
+.header-content {
+    display: flex;
+    flex-direction: row; /* Layout padrão */
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    width: 100%;
+    gap: 40px;
 }
+
+.mascote-header {
+    flex: 1;
+    max-width: 500px; /* Controla o tamanho do mascote */
+    height: auto;
+    animation: fadeIn 2s ease-in-out; /* Adiciona uma animação */
+}
+
+/* Animação para o mascote */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Estilo para o botão "Fale Conosco" */
+.btn-cta-inicio {
+    display: inline-block;
+    background-color: #e0a800;
+    color: #fff;
+    padding: 15px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+    border: none;
+}
+
+.btn-cta-inicio:hover {
+    background-color: #ffc107;
+}
+
 
 /* Ajuste o alinhamento de texto para o contêiner de texto */
 .header-text {
@@ -115,24 +157,30 @@ header img {
     height: auto;
 }
 
-header h1 {
-    font-size: 3.5em;
-    margin: 0;
-    font-weight: 600;
+.header-text {
+    flex: 1;
+    text-align: left;
 }
 
-header h2 {
+.header-text h1 {
+    font-size: 4em;
+    color: #333;
+    margin-bottom: 10px;
+    font-weight: 800;
+}
+
+.header-text h2 {
     font-size: 1.8em;
-    margin-top: 15px;
-    max-width: 800px;
-    margin-left: auto;
-    margin-right: auto;
+    color: #e0a800; /* Cor de destaque */
+    margin-bottom: 20px;
+    font-weight: 500;
 }
 
-header p {
-    font-size: 1.2em;
-    margin: 20px auto;
-    max-width: 700px;
+.header-text p {
+    font-size: 1.1em;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 30px;
 }
 
 /* Botão de Chamada para Ação (CTA) */
@@ -153,23 +201,6 @@ header p {
     color: #fff;
 }
 
-.btn-cta-inicio  {
-    display: inline-block;
-    background-color: #333; /* Cor de destaque - amarelo */
-    color: #fff;
-    padding: 15px 30px;
-    text-align: left;
-    text-decoration: none;
-    border-radius: 10px;
-    font-weight: 600;
-    font-size: 18px;
-    transition: background-color 0.3s ease;
-}
-
-.btn-cta-inicio:hover {
-    background-color: #101010; /* Escurece a cor no hover */
-    color: #fff;
-}
 
 /* Estilo para as seções */
 section h3 {
@@ -660,14 +691,14 @@ section li {
         transition: left 0.3s ease-in-out;
     }
 
-.header-content {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
-    text-align: left;
-}
+    .header-content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        flex-wrap: wrap;
+        text-align: left;
+    }
 
     .mascote-header {
         /* display: none; */
@@ -905,20 +936,22 @@ section li {
     }
 
     .header-content {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 20px;
-        flex-wrap: wrap;
-        text-align: left;
+        flex-direction: column-reverse; /* Mascote vai para cima, texto para baixo */
+        text-align: center;
     }
-
+    .header-text {
+        text-align: center;
+    }
+    .header-text h1 {
+        font-size: 2.5em;
+    }
+    .header-text h2 {
+        font-size: 1.5em;
+    }
     .mascote-header {
-        display: none; 
-    }
-    
-    .mascote-problema {
         display: none;
+        max-width: 300px;
+        margin-bottom: 20px;
     }
 
     #publico-alvo h3 {
