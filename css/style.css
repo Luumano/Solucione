@@ -128,6 +128,7 @@ section {
     font-size: 1em;
     transition: background-color 0.3s ease;
     border: none;
+    margin-bottom: 10px;
 }
 
 .btn-cta-inicio:hover {
